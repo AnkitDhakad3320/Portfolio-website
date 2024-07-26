@@ -912,11 +912,11 @@ span {
     }
 
     .home-content h3 {
-        display: none;
+        visibility: hidden;
     }
     
     .home-content h1 {
-        display: none;
+        visibility: hidden;
     }
 
     .footer {
@@ -939,15 +939,15 @@ span {
 @media (max-width: 315px) {
   
 .home-content h3 {
-    display: none;
+    visibility: hidden
 }
 
 .home-content h1 {
-    display: none;
+    visibility: hidden
 }
 
     img {
-    opacity: 60%;
+        opacity: 60%;
         max-width: 200px;
         left: 0px;
         bottom:0px;
