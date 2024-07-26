@@ -909,6 +909,14 @@ span {
         top: 80rem;
     }
 
+    .home-content h3 {
+        display: none;
+    }
+    
+    .home-content h1 {
+        display: none;
+    }
+
     .footer {
         flex-direction: column-reverse;
     }
@@ -927,10 +935,7 @@ span {
 } */
 
 @media (max-width: 315px) {
-    /* .home-content h1 {
-        font-size: 4.5rem;
-    }
-} */
+  
 .home-content h3 {
     display: none;
 }
