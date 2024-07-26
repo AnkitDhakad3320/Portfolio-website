@@ -934,9 +934,9 @@ span {
 
 
     img {
-        display: none;
+    opacity: 60%;
         max-width: 200px;
         left: 0px;
-        bottom:0p;
+        bottom:0px;
     }
 }
