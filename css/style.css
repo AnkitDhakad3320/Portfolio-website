@@ -853,8 +853,8 @@ span {
     }
 
     .home-img img {
-        max-width: 230px;
-        left: 20px;
+        max-width:230px;
+        left:20px;
     }
 
     .about {
@@ -932,7 +932,11 @@ span {
     }
 } */
 
+
     img {
-        border-radius: 20px;
+        display: none;
+        max-width: 200px;
+        left: 0px;
+        bottom:0p;
     }
 }
