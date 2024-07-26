@@ -133,6 +133,7 @@ section {
 
 .home .home-content {
     max-width: 44rem;
+    margin: 20px;
 }
 
 .home-content h3 {
