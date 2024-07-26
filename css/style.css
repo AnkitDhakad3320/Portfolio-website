@@ -931,7 +931,13 @@ span {
         font-size: 4.5rem;
     }
 } */
+.home-content h3 {
+    display: none;
+}
 
+.home-content h1 {
+    display: none;
+}
 
     img {
     opacity: 60%;
