@@ -894,6 +894,13 @@ span {
     .contact .social-media div a:nth-child(2n) {
         display: none;
     }
+    .home-content h3 {
+        visibility: hidden;
+    }
+    
+    .home-content h1 {
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 450px) {
