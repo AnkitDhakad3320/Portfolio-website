@@ -808,7 +808,7 @@ span {
     }
 
     .home {
-        padding: 0 3% 23rem;
+        /* padding: 0 3% 23rem; */
         justify-content: center;
         text-align: center;
         align-items: center;
