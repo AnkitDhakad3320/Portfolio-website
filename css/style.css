@@ -657,17 +657,6 @@ span {
     }
 }
 
-/* @media (max-width: 1100px) {
-    .home .profession-container .profession-box {
-        right: -15%;
-    }
-
-    .home-img img {
-        max-width: 420px;
-    }
-} */
-
-
 @media (max-width: 1024px) {
     .header {
         padding: 2rem 3%;
@@ -689,39 +678,6 @@ span {
         max-width: 400px;
     }
 }
-
-/* 
-@media (max-width: 991px) {
-
-    .navbar a:nth-child(1) {
-        color: var(--main-color);
-    }
-
-    .navbar a.active::before {
-        background: var(--main-color);
-        opacity: .7;
-    }
-
-    .home .home-content {
-        max-width: 50rem;
-    }
-
-    .home .profession-container .profession-box {
-        right: -35%;
-    }
-
-    .home .profession-container .overlay {
-        right: -30%;
-    }
-
-    .home-img img {
-        max-width: 300px;
-    }
-
-    .footer {
-        padding: 2rem 3%;
-    }
-} */
 
 @media (max-width: 896px) {
     .home .profession-container .profession-box {
@@ -746,17 +702,6 @@ span {
         max-width: 260px;
     }
 }
-
-/* @media (max-width: 780px) {
-    .navbar a:nth-child(2) {
-        color: var(--white-color);
-    }
-
-    .home-img img {
-        max-width: 240px;
-    }
-
-} */
 
 @media (max-width: 768px) {
     #menu-icon {
@@ -793,11 +738,6 @@ span {
         margin: 3rem 0;
         color: var(--text-color);
     }
-
-    /* .navbar a:nth-child(1),
-    .navbar a:nth-child(2) {
-        color: var(--text-color);
-    } */
 
     .navbar a.active {
         color: var(--main-color);
@@ -894,8 +834,8 @@ span {
 
     .contact .social-media div a:nth-child(2n) {
         display: none;
-    }
-  
+    }  
+    
 }
 
 @media (max-width: 450px) {
@@ -907,12 +847,9 @@ span {
         right: 6rem;
     }
 
-
     .home .profession-container .overlay {
         top: 80rem;
     }
-
-  
 
     .footer {
         flex-direction: column-reverse;
@@ -927,14 +864,14 @@ span {
         left: 20px;
         bottom: 0px;
     }
-}
-
-/* 
-@media (max-width: 365px) {
-    .about-img img {
-        width: 90vw;
+    .home-content h3 {
+        display:none;
     }
-} */
+    
+    .home-content h1 {
+        display:none;
+    }
+}
 
 @media (max-width: 315px) {
   
@@ -951,5 +888,12 @@ span {
         max-width: 200px;
         left: 0px;
         bottom:0px;
+    }
+    .home-content h3 {
+        display:none;
+    }
+    
+    .home-content h1 {
+        display:none;
     }
 }
