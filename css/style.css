@@ -926,6 +926,11 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+    .home-img img {
+        max-width: 230px;
+        left: 20px;
+        bottom: 0px;
+    }
 }
 
 /* 
