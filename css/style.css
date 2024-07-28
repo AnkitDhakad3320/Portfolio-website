@@ -811,6 +811,7 @@ span {
         padding: 0 3% 23rem;
         justify-content: center;
         text-align: center;
+        align-items: center;
     }
 
     .home-content h3 {
@@ -894,13 +895,7 @@ span {
     .contact .social-media div a:nth-child(2n) {
         display: none;
     }
-    .home-content h3 {
-        visibility: hidden;
-    }
-    
-    .home-content h1 {
-        visibility: hidden;
-    }
+  
 }
 
 @media (max-width: 450px) {
@@ -917,13 +912,7 @@ span {
         top: 80rem;
     }
 
-    .home-content h3 {
-        visibility: hidden;
-    }
-    
-    .home-content h1 {
-        visibility: hidden;
-    }
+  
 
     .footer {
         flex-direction: column-reverse;
