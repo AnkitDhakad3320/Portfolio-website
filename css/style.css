@@ -277,6 +277,7 @@ section {
     pointer-events: none;
     max-width: 100vw;
     max-height: 60vh;
+    opacity: 0.8;
 }
 
 span {
@@ -631,9 +632,15 @@ span {
 #aboutPage_content {
     display: flex;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-between
 }
-
+#my-image{
+    width: 40vw;
+}
+#my_image img{
+    object-fit: cover;
+    object-position: center;
+}
 #aboutPage_content div {
     width: 40%;
 }
@@ -676,6 +683,7 @@ span {
 
     .home-img img {
         max-width: 400px;
+        z-index: -1;
     }
 }
 
@@ -690,6 +698,7 @@ span {
 
     .home-img img {
         max-width: 280px;
+        z-index: -1;
     }
 }
 
@@ -700,6 +709,7 @@ span {
 
     .home-img img {
         max-width: 260px;
+        z-index: -1;
     }
 }
 
@@ -797,6 +807,7 @@ span {
     .home-img img {
         max-width:230px;
         left:20px;
+        z-index: -1;
     }
 
     .about {
@@ -864,6 +875,7 @@ span {
         left: 0px;
         bottom: 0px;
         opacity: 0.5;
+        z-index: -1;
 
     }
     .home-content h3 {
@@ -890,6 +902,7 @@ span {
         max-width: 200px;
         left: 0px;
         bottom:0px;
+        z-index: -1;
     }
     .home-content h3 {
         display:none;
