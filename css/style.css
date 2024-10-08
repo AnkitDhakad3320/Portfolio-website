@@ -683,7 +683,7 @@ span {
 
     .home-img img {
         max-width: 400px;
-        z-index: -1;
+        opacity: 0.8;
     }
 }
 
