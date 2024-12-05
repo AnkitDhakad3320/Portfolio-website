@@ -839,6 +839,9 @@ span {
     .testimonial-box .swiper-button-prev {
         display: none;
     }
+    #aboutPage_content{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 580px) {
