@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Graphic Design Portfolio - Dynamic Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Modal styles */
+    #imageModal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    #imageModal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 25px #fff;
+      transition: transform 0.3s ease;
+    }
+    #imageModal.show {
+      display: flex;
+    }
+    #closeBtn {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      text-align: center;
+      line-height: 30px;
+      z-index: 1100;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-white shadow p-8 text-center">
+    <h1 class="text-4xl font-bold text-pink-600">Graphic Design Projects</h1>
+    <p class="text-gray-600 mt-2 text-lg">Digital creativity, seamless branding, and visual storytelling for the modern world.</p>
+    <h2 class="mt-6 text-2xl font-semibold text-gray-700">My Creative Expertise</h2>
+    <p class="max-w-3xl mx-auto mt-2 text-gray-600">
+      Design that connects, inspires, and delivers tangible results—across UI/UX, branding, illustrations, marketing, and web.
+    </p>
+  </header>
+
+  <!-- About Section -->
+  <section class="bg-white rounded-xl shadow p-8 mx-auto mt-10 max-w-4xl text-center">
+    <h2 class="text-xl font-semibold text-pink-500 mb-2">About</h2>
+    <p class="mb-3">
+      Design isn’t just about making things look good—it’s about solving problems and telling compelling stories with color, form, and imagination.
+    </p>
+    <p>
+      From idea to execution, every project is driven by a passion for meaningful visuals and effective communication. Experienced with Adobe, Figma, and creative tools, always seeking the next adventure in design.
+    </p>
+  </section>
+
+  <!-- Projects Grid -->
+  <main class="container mx-auto px-16 py-12">
+    <h2 class="text-2xl font-semibold text-gray-700 text-center mb-10">Featured Projects</h2>
+    <section id="projects-container" class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Project cards will be dynamically inserted here -->
+    </section>
+  </main>
+
+  <!-- Services Section (Static as example) -->
+  <section class="bg-white rounded-xl shadow p-8 mx-auto my-10 max-w-4xl">
+    <h2 class="text-xl font-semibold text-pink-500 mb-4">Services Offered</h2>
+    <ul class="text-gray-700 list-disc list-inside">
+      <li>Branding and identity design</li>
+      <li>UI/UX web design</li>
+      <li>Mobile app and SaaS design</li>
+      <li>Social media creative assets</li>
+      <li>Business presentations and infographics</li>
+    </ul>
+  </section>
+
+
+  <footer class="bg-white shadow p-6 text-center mt-10">
+    <p class="text-gray-500">&copy; 2025 Ankit Dhakad | All Rights Reserved</p>
+  </footer>
+
+  <!-- Modal for full image view -->
+  <div id="imageModal">
+    <span id="closeBtn">&times;</span>
+    <img id="modalImg" src="" alt="Full Size Project Image" />
+  </div>
+
+  <!-- Script to dynamically render project cards and enable modal -->
+  <script>
+     const projects = [
+  {
+    title: "ZXSIS Website Wireframes",
+    description: "UI wireframes for Homepage, About, Services, and Contact sections in both light and dark modes.",
+    imgSrc: "Screenshot-2025-07-10-183411.jpg"
+  },
+  {
+    title: "Red & Blue Branding Elements",
+    description: "Header menu and footer UI for the Red & Blue website with geometric graphics and contact info.",
+    imgSrc: "656shots_so.jpg"
+  },
+  {
+    title: "ThemeSwitch Home (Dark Minimal)",
+    description: "ThemeSwitch home page with a dark mode minimalist theme applied, showcasing featured products.",
+    imgSrc: "Screenshot-2025-08-04-073813.jpg"
+  },
+  {
+    title: "Uber India Business Dashboard",
+    description: "Uber interface design highlighting their city coverage in India and business service offerings.",
+    imgSrc: "547shots_so.jpg"
+  },
+  {
+    title: "ZXSIS Wireframes 3D Display",
+    description: "3D rendered screens showing ZXSIS web wireframes in both light and dark UI variations.",
+    imgSrc: "10shots_so.jpg"
+  },
+  {
+    title: "Zxsis Impactful Results Banner",
+    description: "Zxsis homepage banner focused on design passion and impactful results, shown on a laptop screen.",
+    imgSrc: "782shots_so.jpg"
+  },
+  {
+    title: "Red & Blue Digital Transformation",
+    description: "Website landing page for Red & Blue Digital, highlighting collaborative and effortless workflow.",
+    imgSrc: "144_1x_shots_so.jpg"
+  },
+  {
+    title: "MiniJobBoard Job Listings",
+    description: "Job board interface with category filter and a list of different job postings.",
+    imgSrc: "Screenshot-2025-07-29-180027.jpg"
+  },
+  {
+    title: "Contact Form Popup",
+    description: "Modal dialog for submitting contact information, with fields for name, email, phone, and message.",
+    imgSrc: "Screenshot-2024-12-28-222230.jpg"
+  },
+  {
+    title: "ThemeSwitch Home (Fun Font)",
+    description: "Colorful homepage of ThemeSwitch with fun, rounded fonts and featured digital products section.",
+    imgSrc: "Screenshot-2025-08-01-201518.jpg"
+  },
+  {
+    title: "MiniJobBoard Senior Frontend Developer",
+    description: "Detailed frontend developer job posting with salary range, job description, and apply info.",
+    imgSrc: "Screenshot-2025-07-29-180210.jpg"
+  },
+  {
+    title: "ThemeSwitch About Page (Light)",
+    description: "About page for ThemeSwitch, showing company vision, mission, and values in a clean layout.",
+    imgSrc: "Screenshot-2025-08-04-073629.jpg"
+  },
+  {
+    title: "ThemeSwitch Home (Dark Fun Font)",
+    description: "ThemeSwitch homepage in dark mode with a playful font and featured product cards.",
+    imgSrc: "Screenshot-2025-08-04-073800.jpg"
+  },
+  {
+    title: "ThemeSwitch Product Grid (Light)",
+    description: "Product listing page for ThemeSwitch on a light theme, showcasing curated digital items.",
+    imgSrc: "Screenshot-2025-08-01-201454.jpg"
+  },
+  {
+    title: "Uber for Business",
+    description: "Modern ride-sharing & business interface designs.",
+    imgSrc: "406shots_so.jpg"
+  },
+  {
+    title: "ThemeSwitch About Page (Dark)",
+    description: "Dark theme version of ThemeSwitch's About page, highlighting mission and core values.",
+    imgSrc: "Screenshot-2025-08-04-073858.jpg"
+  },
+  {
+    title: "Uber for Business City Map",
+    description: "Dashboard with a map view of India highlighting Uber's service locations and business features.",
+    imgSrc: "Screenshot-2025-07-10-181328.jpg"
+  },
+  {
+    title: "Red & Blue Footer Design",
+    description: "Footer UI for Red & Blue website with logo, product links, contacts, and social media.",
+    imgSrc: "243shots_so.jpg"
+  },
+  {
+    title: "Red & Blue Navigation Bar",
+    description: "Navigation menu for Red & Blue with geometric style elements and navigation links.",
+    imgSrc: "545shots_so.jpg"
+  },
+  {
+    title: "ZXSIS Web Wireframe Presentation",
+    description: "Wireframes for the ZXSIS site displayed on virtual monitors over a gradient 3D background.",
+    imgSrc: "Desktop-3.jpg"
+  },
+  {
+    title: "MiniJobBoard Add Job Form",
+    description: "Interface for posting new job listings on MiniJobBoard with a form for details.",
+    imgSrc: "Screenshot-2025-07-31-085344.jpg"
+  },
+  {
+    title: "ThemeSwitch Contact Page Light",
+    description: "Contact page for ThemeSwitch on a light theme, with office, support, and location info.",
+    imgSrc: "Screenshot-2025-08-01-201549.jpg"
+  },
+  {
+    title: "ThemeSwitch Product Grid (Light 2)",
+    description: "Alternate view of ThemeSwitch products page on a light background with rating and cart options.",
+    imgSrc: "Screenshot-2025-08-01-201644.jpg"
+  },
+  {
+    title: "Uber for Business Laptop UI",
+    description: "Uber for Business interface with map and dashboard preview displayed on a laptop.",
+    imgSrc: "Screenshot-2025-07-10-181434.jpg"
+  },
+  {
+    title: "MiniJobBoard Job Listings Alt",
+    description: "Alternate MiniJobBoard job listing page showing real and sample job listings.",
+    imgSrc: "Screenshot-2025-07-31-085455.jpg"
+  },
+  {
+    title: "Uber for Business Preview",
+    description: "Dashboard preview for Uber for Business highlighting India map and ride options.",
+    imgSrc: "Screenshot-2025-07-10-181308.jpg"
+  },
+  {
+    title: "Uber Driver Signup",
+    description: "Uber interface screen inviting users to sign up as drivers with a scenic image.",
+    imgSrc: "Screenshot-2025-07-10-180830.jpg"
+  },
+  {
+    title: "ThemeSwitch Product Page (Dark)",
+    description: "ThemeSwitch product listing in dark mode with rating, price and cart options.",
+    imgSrc: "Screenshot-2025-08-01-201742.jpg"
+  },
+  {
+    title: "ThemeSwitch Contact Page (Dark)",
+    description: "Contact page for ThemeSwitch in dark mode, with stylish cards for contact options.",
+    imgSrc: "Screenshot-2025-08-04-073658.jpg"
+  },
+  {
+    title: "Red & Blue Careers Page",
+    description: "Red & Blue website careers and expertise page with a vibrant background and login option.",
+    imgSrc: "Screenshot-2025-07-10-183432.jpg"
+  }
+]
+
+
+    const container = document.getElementById("projects-container");
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.getElementById("closeBtn");
+
+    projects.forEach(({title, description, imgSrc}) => {
+      const card = document.createElement("div");
+      card.className = "bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300 cursor-pointer";
+
+      card.innerHTML = `
+        <img src="./graphic-design-images/${imgSrc}" alt="${title} Project Image" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold mb-2">${title}</h3>
+          <p class="text-gray-600 mb-3 text-sm">${description}</p>
+        </div>
+      `;
+
+      card.addEventListener("click", () => {
+        modalImg.src = `./graphic-design-images/${imgSrc}`;
+        modal.classList.add("show");
+      });
+
+      container.appendChild(card);
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("show");
+      modalImg.src = "";
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.remove("show");
+        modalImg.src = "";
+      }
+    });
+  </script>
+
+</body>
+</html>

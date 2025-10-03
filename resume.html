@@ -1,0 +1,267 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ankit Dhakad - About Me</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .section-heading {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #1e3a8a;
+      }
+      .sub-heading {
+        font-weight: 500;
+        color: #4338ca;
+        margin-bottom: 0.5rem;
+      }
+      .info-box {
+        background: linear-gradient(135deg, #d8e0f1, #e0e7ff);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-left: 5px solid #3b82f6;
+      }
+      .info-box:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s ease;
+        border-left: 10px solid #3b82f6;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+      .projects-list li {
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-blue-50 to-indigo-100 text-gray-800">
+    <!-- Header -->
+
+    <header
+      class="bg-white shadow p-6 flex flex-col md:flex-row justify-between items-center"
+    >
+      <div>
+        <h1 class="text-2xl font-bold text-indigo-700">ANKIT DHAKAD</h1>
+        <p class="text-gray-600">Full Stack Developer</p>
+      </div>
+      <div class="mt-4 md:mt-0 text-center md:text-right">
+        <p class="sub-heading">
+          📞 +91 9713516774 | ✉ ankitdhakad4801@gmail.com
+        </p>
+        <p class="sub-heading">
+          💼
+          <a
+            href="https://www.linkedin.com/in/ankit-dhakad-4968b5199/"
+            class="text-blue-600 underline"
+            target="_blank"
+            >LinkedIn</a
+          >
+          |
+          <a
+            href="https://github.com/AnkitDhakad3320"
+            class="text-blue-600 underline"
+            target="_blank"
+            >GitHub</a
+          >
+          |
+          <a
+            href="https://ankitdhakadportfolio.netlify.app"
+            class="text-blue-600 underline"
+            target="_blank"
+            >Portfolio</a
+          >
+        </p>
+      </div>
+    </header>
+
+    <!-- Profile Card -->
+
+    <section class="flex justify-center mt-12">
+      <div
+        class="bg-white shadow-lg rounded-2xl p-8 flex flex-col items-center text-center w-full md:w-2/3 lg:w-1/2 transition-transform hover:scale-105 duration-300"
+      >
+        <img
+          src="./images/profile.jpg"
+          alt="Profile Photo"
+          class="w-32 h-32 rounded-full shadow-md mb-4 object-cover"
+        />
+        <h2 class="text-2xl font-bold text-indigo-700">Ankit Dhakad</h2>
+        <p class="text-gray-600">
+          Full Stack Developer | MERN Stack | React.js Specialist
+        </p>
+        <p class="mt-3 text-gray-700">
+          Passionate about creating scalable and user-friendly applications. I
+          enjoy solving challenging problems, building reusable components, and
+          delivering clean, production-ready code.
+        </p>
+      </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-12">
+      <!-- Professional Summary -->
+      <section class="mb-12">
+        <h2 class="section-heading">Professional Summary</h2>
+        <p>
+          Full Stack Developer with 2+ years of experience in building scalable,
+          responsive, and high-performance web applications using the MERN
+          stack. Strong expertise in React.js, JavaScript, Node.js, and Tailwind
+          CSS. Proven ability to deliver production-grade applications, optimize
+          performance, and integrate secure APIs. Skilled in translating
+          requirements into efficient solutions while collaborating within agile
+          teams.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section class="mb-12">
+        <h2 class="section-heading">Skills</h2>
+        <div class="skills-grid">
+          <div class="info-box">
+            <h3 class="sub-heading">Frontend</h3>
+            <p>
+              React.js, JavaScript, TypeScript, Redux, HTML5, CSS3, Tailwind
+              CSS, Material UI
+            </p>
+          </div>
+          <div class="info-box">
+            <h3 class="sub-heading">Backend</h3>
+            <p>Node.js, Express.js, Socket.IO</p>
+          </div>
+          <div class="info-box">
+            <h3 class="sub-heading">Databases</h3>
+            <p>MongoDB, MySQL</p>
+          </div>
+          <div class="info-box">
+            <h3 class="sub-heading">APIs</h3>
+            <p>RESTful APIs, JWT Authentication</p>
+          </div>
+          <div class="info-box">
+            <h3 class="sub-heading">Tools</h3>
+            <p>
+              Git, GitHub, Postman, AWS, Figma, VS Code, Netlify, MySQL
+              Workbench
+            </p>
+          </div>
+          <div class="info-box">
+            <h3 class="sub-heading">Workflow</h3>
+            <p>
+              Agile Methodology, Performance Optimization, Cross-Browser
+              Compatibility
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="mb-12">
+        <h2 class="section-heading">Experience</h2>
+        <div class="info-box">
+          <h3 class="sub-heading">
+            TechHelper Technologies | Software Developer
+          </h3>
+          <p class="text-gray-600">Bhopal, MP | May 2023 – July 2025</p>
+          <ul class="list-disc pl-5 mt-2">
+            <li>
+              Developed and maintained full-stack applications with React.js and
+              Tailwind CSS.
+            </li>
+            <li>
+              Improved frontend performance via lazy loading, code splitting,
+              and optimized components.
+            </li>
+            <li>
+              Built and integrated RESTful APIs in Node.js and Express.js,
+              reducing API response times.
+            </li>
+            <li>
+              Created reusable UI components and collaborated with UI/UX teams
+              using Figma.
+            </li>
+            <li>
+              Applied secure authentication and role-based access control with
+              JWT.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="mb-12">
+        <h2 class="section-heading">Projects</h2>
+        <ul class="projects-list list-disc pl-5">
+          <li>
+            <strong>School ERP Software</strong> - React.js, Node.js, MySQL,
+            Chart.js, JWT: Built dashboards for students, staff, and academics.
+          </li>
+          <li>
+            <strong>QR Staff Attendance System</strong> - React.js, Node.js,
+            MongoDB, Chart.js, Socket.io: Developed QR-based real-time
+            attendance solution with analytics dashboard.
+          </li>
+          <li>
+            <strong>IMFU Online (Medical Retail Platform)</strong> - React.js,
+            REST APIs, MongoDB: Designed inventory and order management
+            dashboards, integrated wallet features.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Education -->
+      <section class="mb-12">
+        <h2 class="section-heading">Education</h2>
+        <div class="info-box">
+          <h3 class="sub-heading">
+            Bachelor of Engineering (Civil Engineering) | 2016 – 2020
+          </h3>
+          <p>University Institute of Technology, RGPV, Bhopal</p>
+          <p class="mt-2"><strong>GATE Exam Qualified</strong> - 2022</p>
+        </div>
+      </section>
+
+      <!-- Languages -->
+      <section class="mb-12">
+        <h2 class="section-heading">Languages</h2>
+        <div class="info-box">
+          <p>English, Hindi</p>
+        </div>
+      </section>
+
+      <!-- Action Buttons -->
+      <div class="text-center mt-8 space-x-4">
+        <a
+          href="index.html"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded"
+          >Back to Home</a
+        >
+        <a
+          href="images/Ankit CV.pdf"
+          download
+          class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded"
+          >Download Resume</a
+        >
+      </div>
+    </main>
+
+ 
+
+    <footer class="bg-white shadow p-6 text-center mt-12">
+      <p>&copy; 2025 Ankit Dhakad | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

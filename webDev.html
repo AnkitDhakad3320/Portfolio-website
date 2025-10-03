@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Projects - Ankit Dhakad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .project-card:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-poppins text-gray-800">
+
+ 
+  <!-- Header -->
+  <header class="bg-white shadow p-6 text-center">
+    <h1 class="text-3xl md:text-4xl font-bold text-indigo-600">Web Development Projects</h1>
+    <p class="text-gray-600 mt-2 text-lg md:text-xl">Projects built with React, Node.js, MongoDB, Tailwind CSS, and more</p>
+    <h2 class="mt-6 text-2xl font-semibold text-gray-700">My Expertise</h2>
+    <p class="max-w-3xl mx-auto mt-2 text-gray-600">
+      I specialize in developing dynamic, responsive, and high-performance web applications that combine creativity with functionality. My expertise lies in the <strong>MERN stack</strong>, and I thrive on building solutions that solve real-world problems.
+    </p>
+    <div class="hidden max-w-3xl mx-auto mt-2 text-gray-600" id="moreContent">
+      <p>
+        From <strong>frontend UI/UX development</strong> using React.js and Tailwind CSS to <strong>backend API development</strong> with Node.js and Express, I bring end-to-end technical expertise. I focus on writing <em>clean, scalable, and secure code</em>, implementing authentication, and optimizing performance.
+      </p>
+      <p>
+        I’ve worked on ERP software, attendance management systems, and e-commerce platforms with features like role-based permissions, dashboards, and real-time data.
+      </p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-24 md:px-24 py-12">
+
+    <!-- Projects Grid -->
+    <section id="projects-container" class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Projects will be injected here -->
+    </section>
+
+    <!-- Back Button -->
+    <div class="text-center mt-12">
+      <a href="index.html" class="inline-block bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+        Back to Home
+      </a>
+    </div>
+
+  </main>
+
+
+  <footer class="bg-white shadow p-6 text-center mt-16">
+    <p>&copy; 2025 Ankit Dhakad | All Rights Reserved</p>
+  </footer>
+
+
+  <!-- Script to generate projects -->
+  <script>
+    const projects = [
+      { title: "Zxsis Ecom", url: "https://ecomankitdhakadfull-stackdeveloper.vercel.app/", type: "Full-Stack", desc: "Full stack e-commerce platform with shopping cart, product pages, and payment integration." },
+      { title: "Dashboard App", url: "https://entryfrontend.onrender.com/", type: "Full-Stack", desc: "Dynamic dashboard app with user management and image handling features." },
+      { title: "Job Dashboard", url: "https://taskfrontend-ve21.onrender.com/", type: "Full-Stack", desc: "Mini job board platform with real-time updates and interactive UI." },
+      { title: "Amazon Clone", url: "https://amazon-clone-848a.onrender.com/", type: "Full-Stack", desc: "E-commerce clone with product listing, cart, and full-stack integration." },
+      { title: "Shopping Tools", url: "https://online-three-xi.vercel.app/User", type: "Full-Stack", desc: "Web app for browsing and ordering shopping tools with interactive UI." },
+      { title: "Shop Sigma", url: "https://shop-sigma-nine-81.vercel.app", type: "Full-Stack", desc: "Front-end e-commerce project with product listing and responsive design." },
+      { title: "PDF Downloader & Editor", url: "https://pdf-downloder-and-editor.onrender.com/", type: "Backend", desc: "Backend service to download, edit, and manipulate PDF files online." },
+      { title: "URL Shortener", url: "https://urlshortner-qyg2.onrender.com/", type: "Backend", desc: "Simple URL shortening service with analytics and link management." },
+      { title: "Frontend Portfolio", url: "https://zxsis-ankitdhakad3320s-projects.vercel.app/", type: "Frontend", desc: "Showcase of multiple frontend projects with clean UI and responsive design." },
+      { title: "Casino Website", url: "https://casino-sigma-nine.vercel.app/", type: "Frontend", desc: "Frontend casino website demo with interactive elements." },
+      { title: "HR Dashboard", url: "https://hr-dashboard-beige-xi.vercel.app/dashboard", type: "Frontend", desc: "HR dashboard UI with employee management and analytics." },
+      { title: "Amazon Clone Frontend", url: "https://amazon-clone-nine-ruddy.vercel.app/", type: "Frontend", desc: "Frontend-only version of Amazon clone with product pages." },
+      { title: "Job Dashboard (JS)", url: "https://ankitdhakad3320.github.io/job_deshboard/", type: "JS Project", desc: "JavaScript-only job dashboard with DOM manipulation." },
+      { title: "Viral Blog", url: "https://ankitdhakad3320.github.io/viral-blog/", type: "JS Project", desc: "Blog page using JavaScript with interactive features." },
+      { title: "Analog Watch", url: "https://ankitdhakad3320.github.io/Analog_Watch/", type: "JS Project", desc: "Interactive analog watch with JavaScript." },
+      { title: "DOM Manipulation Card", url: "https://dom-manipulation-card.vercel.app/", type: "JS Project", desc: "Card manipulation project showcasing dynamic DOM updates." },
+      { title: "Whizard DOM Project", url: "https://ankitdhakad3320.github.io/Whizard/", type: "JS Project", desc: "Structured DOM project with interactive features." },
+      { title: "Tour & Travels", url: "https://ankitdhakad3320.github.io/Tour-and-Travels/", type: "HTML/CSS", desc: "Travel website with HTML & CSS full structure." },
+      { title: "Baba ka Dhaba", url: "https://ankitdhakad3320.github.io/resturant/", type: "HTML/CSS", desc: "Restaurant website using HTML and CSS." },
+      { title: "Design Nerd Landing Page", url: "https://ankitdhakad3320.github.io/portfolio/02_DesignNerd/index3.html", type: "HTML/CSS Responsive Landing page", desc: "Landing page with complete responsive layout." },
+      { title: "Select Winter 2024 Landing", url: "https://ankitdhakad3320.github.io/portfolio/01_SelectWinter2024/index2.html", type: "HTML/CSS Responsive Animated page", desc: "Landing page design with modern UI elements." },
+      { title: "Web Project", url: "https://ankitdhakad3320.github.io/Web/", type: "HTML/CSS Responsive Landing page", desc: "HTML, CSS, and full structure web project." },
+      { title: "E-Com Cotton Weave", url: "https://ankitdhakad3320.github.io/E-com-cotton-weave/", type: "HTML/CSS Responsive Landing page", desc: "E-commerce front-end project with structured layout." },
+      { title: "E-Commerce Page", url: "https://ankitdhakad3320.github.io/E-commerce-page/", type: "HTML/CSS Responsive Landing page", desc: "Simple HTML/CSS e-commerce demo page." },
+      { title: "Fashion Page", url: "https://ankitdhakad3320.github.io/fashion-page/", type: "HTML/CSS Responsive Landing page", desc: "Fashion landing page with modern responsive design." },
+      { title: "Clam Project", url: "https://ankitdhakad3320.github.io/clam/", type: "HTML/CSS Responsive Landing page", desc: "HTML/CSS structured project with UI elements." }
+    ];
+
+    const container = document.getElementById('projects-container');
+
+    projects.forEach(project => {
+      const card = document.createElement('div');
+      card.className = "relative project-card rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 bg-white";
+
+    card.innerHTML = `
+  <a href="${project.url}" target="_blank">
+    <img src="https://api.microlink.io/?url=${project.url}&screenshot=true&embed=screenshot.url" alt="${project.title}" class="w-full h-52 object-cover">
+  </a>
+  <div class="p-5">
+    <h3 class="text-xl font-semibold mb-2">${project.title}</h3>
+    <p class="text-gray-600 mb-3">${project.desc}</p>
+    <a href="${project.url}" target="_blank" class="text-indigo-600 font-medium hover:underline">View Project</a>
+  </div>
+  <a href="${project.url}" target="_blank" class="text-indigo-600 font-medium hover:underline">
+  <div class="overlay absolute inset-0 flex items-center justify-center text-white text-lg font-semibold opacity-0 transition duration-300"
+       style="background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color)); --main-color: #55cee6;">
+    ${project.type}
+  </div>
+  </a>
+`;
+
+      container.appendChild(card);
+    });
+  </script>
+
+</body>
+</html>
